@@ -5,35 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/mian.js"></script>
     <title>Document</title>
   </head>
-  <style>
-    body {
-      background-color: red;
-    }
-  </style>
   <body>
     <header>
       <nav>
         <ul>
-          <li>MENU</li>
-          <li>ABOUT</li>
-          <li>LOCATION</li>
+          <li id="menu-btn">MENU</li>
+          <li id="about-btn">ABOUT</li>
+          <li id="location-btn">LOCATION</li>
         </ul>
       </nav>
       <h1><img src="img/logo.svg" alt="" /></h1>
     </header>
 
     <main>
-      <section>
+      <section class="main-one">
         <div class="menu-area">
           <h2>MENU</h2>
-        </div><!-- menu-area -->
+        </div>
+        <!-- menu-area -->
+
         <div class="flex-area">
           <div class="left-area">
-            <h3>COFFEE</h3>
+            <div class="area-title">
+              <h3>COFFEE</h3>
+            </div>
+            <!-- area-title -->
             <ul>
               <li>xxxxxxxxxx<span>&yen;500</span></li>
               <li>xxxxxxxxxx<span>&yen;500</span></li>
@@ -46,54 +47,81 @@
               <li>xxxxxxxxxx<span>&yen;500</span></li>
               <li>xxxxxxxxxx<span>&yen;500</span></li>
             </ul>
-          </div><!-- left-area -->
+          </div>
+          <!-- left-area -->
           <div class="right-area">
             <div class="left-up">
-              <h3>FOOD</h3>
+              <div class="area-title">
+                <h3>FOOD</h3>
+              </div>
+              <!-- area-title -->
               <ul>
                 <li>xxxxxxxxxx<span>&yen;500</span></li>
                 <li>xxxxxxxxxx<span>&yen;500</span></li>
                 <li>xxxxxxxxxx<span>&yen;500</span></li>
               </ul>
-            </div><!-- left-up -->
+            </div>
+            <!-- left-up -->
             <div class="left-down">
-              <h3>OTHER</h3>
+              <div class="area-title">
+                <h3>OTHER</h3>
+              </div>
+              <!-- area-title -->
               <ul>
                 <li>xxxxxxxxxx<span>&yen;500</span></li>
                 <li>xxxxxxxxxx<span>&yen;500</span></li>
                 <li>xxxxxxxxxx<span>&yen;500</span></li>
               </ul>
-            </div><!-- left-down -->
-          </div><!-- right-area -->
-        </div><!-- flex-area -->
-      </section><!-- section -->
+            </div>
+            <!-- left-down -->
+          </div>
+          <!-- right-area -->
+        </div>
+        <!-- flex-area -->
+      </section>
+      <!-- section -->
 
-      <section>
+      <section class="main-two">
         <div class="about-area">
           <h2>ABOUT</h2>
         </div>
+        <div class="area-title">
+          <h3>COFFEE</h3>
+        </div>
+        <!-- area-title -->
         <div class="about-text-area">
           <p>テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト</p>
           <p>テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト</p>
           <p>テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト</p>
           <p>テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
-        <button>Read More</button>
+        <p class="btn">Read More</p>
       </section>
 
-      <section>
+      <section class="main-three">
         <div class="location">
           <h2>LOCATION</h2>
         </div>
+        <!-- location -->
         <div class="location-area">
-          <h3>OUR STORE</h3>
-          <div class="map-area"></div>
+          <div class="area-title">
+            <h3>OUR STORE</h3>
+          </div>
+          <!-- area-title -->
+          <div class="map-area">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2259.7673110829073!2d139.70764681275904!3d35.64553765427277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b40ba660b1b%3A0x8858088b6942f55f!2z44CSMTUwLTAwMjIg5p2x5Lqs6YO95riL6LC35Yy65oG15q-U5a-_5Y2X!5e0!3m2!1sja!2sjp!4v1617790325967!5m2!1sja!2sjp" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
         </div>
-        <p>X-XX-XX, Ebisuminami, Shibuya-ku, Tokyo 150-0022</p>
-        <p>東京都渋谷区恵比寿南X-XX-XX</p>
-        <p>Open 7 days a Week</p>
-        <p>9:00am to 10:00pm</p>
-        <p>Tel : XX-XXXX-XXXX</p>
+        <!-- location-area -->
+        <div class="contact">
+          <p>X-XX-XX, Ebisuminami, Shibuya-ku, Tokyo 150-0022</p>
+          <p>東京都渋谷区恵比寿南X-XX-XX</p>
+          <div class="day-time">
+            <p>Open 7 days a Week</p>
+            <p>9:00am to 10:00pm</p>
+          </div>
+          <p>Tel : XX-XXXX-XXXX</p>
+        </div>
       </section>
     </main>
 
