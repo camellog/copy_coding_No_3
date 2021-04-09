@@ -1,0 +1,302 @@
+li {
+  list-style: none;
+  display: inline-block;
+}
+span{
+  display: inline-block;
+}
+
+header{
+  background: url("../img/mainvisual.jpg") center / cover;
+  height: 100vh;
+  max-width: 100%;
+}
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px 0 0;
+}
+nav li{
+  font-weight: bold;
+  color: white;
+  transition: .4s;
+  margin-right: 20px;
+  cursor: pointer;
+}
+nav li:hover{
+  color: red;
+}
+header h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+header h1 img{
+  max-width: 100%;
+}
+
+main{
+  margin-top: 20px;
+}
+.menu-area{
+  background-image: url("../img/menu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat ;
+  background-position: center;
+  height: 100px;
+}
+.area-title{
+  margin-top: 10px;
+  text-align: center;
+}
+.menu-area{
+  color: white;
+  text-align: center;
+}
+.menu-area h2{
+  line-height: 100px;
+  font-size: 2.0rem;
+}
+h3{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border-bottom: solid 5px red;
+}
+.flex-area{
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-area{
+  width: 100%;
+}
+.left-area ul, .right-area ul{
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.left-area li, .right-area li{
+  width: 90%;
+  border-bottom: dotted 1px ;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+.left-area span, .right-area span{
+  position: absolute;
+  right: 0;
+  border-bottom: solid 1px white;
+}
+.right-area{
+  width: 100%;
+}
+
+.main-two{
+  margin-top: 100px;
+}
+.about-area {
+  height: 100px;
+  background: url('../img/about.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.about-area h2{
+  font-size: 2.0rem;
+  line-height: 100px;
+  color: white;
+}
+.about-text-area{
+  margin: 40px auto 0;
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-text-area p{
+  margin-top: 20px;
+  line-height: 2.0rem;
+}
+.main-two .btn{
+  position: relative;
+  margin: 50px auto 0;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 50px;
+  cursor: pointer;
+}
+.main-two .btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 50%;
+  border-top: solid 3px red;
+  border-left: solid 3px red;
+  transition: all .5s;
+}
+.main-two .btn:hover::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 166px;
+  height: 45px;
+  border-top: solid 3px red;
+  border-left: solid 3px red;
+  transition: all .5s;
+}
+.main-two .btn::after{
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  right: 0;
+  bottom: 0;
+  border-right: solid 3px red;
+  border-bottom: solid 3px red;
+  transition: all .5s;
+}
+.main-two .btn:hover::after{
+  content: "";
+  position: absolute;
+  width: 166px;
+  height: 45px;
+  right: 0;
+  bottom: 0;
+  border-right: solid 3px red;
+  border-bottom: solid 3px red;
+  transition: all .5s;
+}
+
+
+.main-three{
+  margin-top: 100px;
+}
+.location{
+  height: 100px;
+  background: url('../img/location.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.location h2{
+  font-size: 2.0rem;
+  color: white;
+  line-height: 100px;;
+}
+.map-area{
+  width: 95%;
+  margin: 30px auto 0;
+}
+
+
+.contact{
+  margin: 50px auto 0;
+  width: 95%;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+.contact p{
+font-size: .9rem;
+}
+.day-time{
+  margin: 15px auto;
+}
+footer{
+  margin: 100px 0 10px;
+  text-align: center;
+  font-size: .6rem;
+}
+
+@media screen and (min-width: 766px){
+
+
+  .flex-area{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto 0;
+    max-width: 1000px;
+  }
+  .flex-area::after{
+    position: absolute;
+    content: "";
+    border-right: solid 1px;
+    height: 100%;
+  }
+  .left-area{
+    width: 40%;
+    position: relative;
+  }
+  .right-area{
+    width: 40%;
+  }
+  .left-area ul, .right-area ul{
+    width: 95%;
+    margin: 30px auto 0;
+    position: relative;
+  }
+  .left-area li, .right-area li{
+    width: 90%;
+    border-bottom: dotted 1px ;
+    margin-top: 30px;
+    padding-bottom: 5px;
+  }
+  h3{
+    margin-top: 50px;
+    font-size: 2.8rem;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-bottom: solid 5px red;
+  }
+  .menu-area{
+    background-attachment: fixed;
+    height: 300px;
+  }
+  .menu-area h2{
+    line-height: 300px;
+    font-size: 4.0rem;
+  }
+  .about-area{
+    background-attachment: fixed;
+    height: 300px;
+    text-align: center;
+  }
+  .about-area h2{
+    line-height: 300px;
+    font-size: 4.0rem;
+    color: white;
+  }
+  .about-text-area{
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-text-area p{
+    margin-top: 20px;
+    width: 48%;
+  }
+  .location{
+    height: 300px;
+    background-attachment: fixed;
+    text-align: center;
+  }
+  .location h2{
+    font-size: 4.0rem;
+    color: white;
+    line-height: 300px;;
+  }
+
+
+
+}
